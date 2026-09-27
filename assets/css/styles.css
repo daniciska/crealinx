@@ -200,6 +200,24 @@ p { margin: 0 0 1em; }
 .social:hover { background: var(--accent); }
 .social svg { width: 18px; height: 18px; fill: #fff; }
 
+/* WhatsApp */
+.wa-link svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
+.contact-list .wa-link { display: inline-flex; align-items: center; gap: 8px; }
+.contact-list .wa-link svg { fill: #1f9e57; }
+.wa-float {
+  position: fixed; right: 20px; bottom: 20px; z-index: 60;
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 20px 14px 16px; border-radius: 999px;
+  background: #1f9e57; color: #fff; text-decoration: none; font: 600 .95rem var(--sans);
+  box-shadow: 0 10px 25px rgba(15, 47, 68, .25); transition: transform .15s, background .2s;
+}
+.wa-float:hover { transform: translateY(-2px); background: #188a4b; }
+.wa-float svg { width: 26px; height: 26px; }
+@media (max-width: 760px) {
+  .wa-float { right: 16px; bottom: 16px; padding: 14px; }
+  .wa-float-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+}
+
 /* Reveal on scroll */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.in { opacity: 1; transform: none; }

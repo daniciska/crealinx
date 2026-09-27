@@ -10,6 +10,7 @@ Rediseño de www.crealynx.cl como sitio estático (HTML + CSS + JS, sin dependen
 
 ## Pendientes (completar con datos reales)
 - [ ] Correo real (hoy `contacto@crealynx.cl`) y URL de LinkedIn (hoy `linkedin.com`) en `index.html`
+- [ ] Número de WhatsApp: reemplazar `56900000000` en `index.html` (aparece 2 veces)
 - [ ] Fotos en mejor resolución (las actuales se recortaron de capturas del sitio antiguo)
 - [ ] Revisar las descripciones breves de cada servicio y las traducciones al español
 

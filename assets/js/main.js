@@ -77,7 +77,9 @@
     "f.company": "Company",
     "f.phone": "Mobile",
     "f.msg": "How can I help?",
-    "f.send": "Send message"
+    "f.send": "Send message",
+    "wa.label": "Message me on WhatsApp",
+    "wa.short": "Let's talk?"
   };
 
   var nodes = document.querySelectorAll("[data-i18n]");
@@ -93,6 +95,12 @@
       if (dict[key]) el.textContent = dict[key];
     });
     document.documentElement.lang = lang;
+    var waText = lang === "en"
+      ? "Hi Mario, I'd like to know how Crealynx can help my company reduce costs."
+      : "Hola Mario, me interesa saber cómo Crealynx puede ayudar a mi empresa a reducir costos.";
+    document.querySelectorAll(".wa-link").forEach(function (a) {
+      a.href = a.href.split("?")[0] + "?text=" + encodeURIComponent(waText);
+    });
     toggle.textContent = lang === "en" ? "ES" : "EN";
     toggle.setAttribute("aria-label", lang === "en" ? "Cambiar a español" : "Switch to English");
     try { localStorage.setItem("lang", lang); } catch (e) {}
@@ -100,7 +108,7 @@
 
   var saved = null;
   try { saved = localStorage.getItem("lang"); } catch (e) {}
-  if (saved === "en" || (!saved && /^en/i.test(navigator.language || ""))) setLang("en");
+  setLang(saved === "en" || (!saved && /^en/i.test(navigator.language || "")) ? "en" : "es");
 
   toggle.addEventListener("click", function () {
     setLang(document.documentElement.lang === "en" ? "es" : "en");
