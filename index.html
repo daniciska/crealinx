@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crealynx Consulting · Eficiencia en costos y compras estratégicas</title>
-  <meta name="description" content="Crealynx Consulting ayuda a empresas en Chile a mejorar su margen con compras estratégicas, optimización de costos y negociación con proveedores.">
+  <title>Crealynx Consulting · Reducción de costos y negociación con proveedores</title>
+  <meta name="description" content="Mario Carrasco, más de 15 años en compras estratégicas (ex LATAM Airlines). Reducimos tus costos y negociamos con proveedores. Pago 100% variable: si no hay ahorro, no pagas.">
   <link rel="canonical" href="https://www.crealynx.cl/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#1f2335">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Crealynx Consulting">
-  <meta property="og:title" content="Crealynx Consulting · Mejora tu margen sin sacrificar crecimiento">
-  <meta property="og:description" content="Compras estratégicas, optimización de costos y negociación con proveedores para empresas de todos los tamaños.">
+  <meta property="og:title" content="¿Hace cuánto no revisas tus costos estratégicos? · Crealynx">
+  <meta property="og:description" content="Ahorros medibles sin afectar tu operación. Pago 100% variable: si no hay ahorro, el costo es $0.">
   <meta property="og:url" content="https://www.crealynx.cl/">
   <meta property="og:image" content="https://www.crealynx.cl/assets/img/consultor.jpg">
   <meta property="og:locale" content="es_CL">
@@ -31,8 +31,8 @@
     "url": "https://www.crealynx.cl/",
     "image": "https://www.crealynx.cl/assets/img/consultor.jpg",
     "areaServed": "CL",
-    "description": "Consultoría en compras estratégicas, optimización de costos y negociación con proveedores.",
-    "knowsAbout": ["Strategic Procurement", "Category Management", "Spend Analysis", "Supplier Negotiation", "Procurement Governance"]
+    "description": "Consultoría en reducción de costos, negociación con proveedores y compras estratégicas, con pago 100% variable según resultados.",
+    "founder": { "@type": "Person", "name": "Mario Carrasco", "jobTitle": "Consultor en compras estratégicas" }
   }
   </script>
 </head>
@@ -47,7 +47,8 @@
       </a>
       <nav class="nav" id="nav" aria-label="Principal">
         <a href="#servicios" data-i18n="nav.services">Servicios</a>
-        <a href="#enfoque" data-i18n="nav.approach">Enfoque</a>
+        <a href="#metodologia" data-i18n="nav.method">Metodología</a>
+        <a href="#pago" data-i18n="nav.pricing">Cómo cobro</a>
         <a href="#nosotros" data-i18n="nav.about">Quién soy</a>
         <a href="#contacto" class="btn btn-sm" data-i18n="nav.contact">Conversemos</a>
       </nav>
@@ -61,131 +62,183 @@
   </header>
 
   <main id="main">
-    <!-- HERO -->
+    <!-- 1. HERO: la pregunta que engancha -->
     <section class="hero" id="top">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Compras estratégicas · Eficiencia en costos · Negociación</p>
-          <h1 data-i18n="hero.title">Toda empresa puede mejorar su margen sin sacrificar crecimiento.</h1>
-          <p class="lead" data-i18n="hero.lead">Llevo prácticas de negociación y gestión de costos de nivel corporativo global a empresas de todos los tamaños que buscan crecer de forma sostenible.</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Reducción de costos · Negociación con proveedores</p>
+          <h1 data-i18n="hero.title">¿Hace cuánto no revisas tus costos estratégicos?</h1>
+          <p class="lead" data-i18n="hero.lead">Ayudamos a las empresas a detectar ineficiencias ocultas, optimizar sus contratos con proveedores y generar ahorros medibles, sin afectar la operación ni la calidad.</p>
           <div class="hero-cta">
-            <a href="#contacto" class="btn" data-i18n="hero.cta">Agenda una conversación</a>
-            <a href="#servicios" class="btn btn-ghost" data-i18n="hero.cta2">Ver servicios</a>
+            <a href="#contacto" class="btn" data-i18n="hero.cta">Solicita un diagnóstico</a>
+            <a href="#pago" class="btn btn-ghost" data-i18n="hero.cta2">Ver cómo cobro</a>
           </div>
-          <ul class="hero-pills" aria-label="Principios">
-            <li data-i18n="pill.data">Datos</li>
-            <li data-i18n="pill.transparency">Transparencia</li>
-            <li data-i18n="pill.collab">Colaboración</li>
-          </ul>
+          <p class="guarantee">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            <span data-i18n="hero.guarantee">Pago 100% variable: si no hay ahorro, no pagas.</span>
+          </p>
         </div>
         <figure class="hero-photo">
           <picture>
-            <source type="image/webp" srcset="assets/img/consultor-600.webp 600w, assets/img/consultor.webp 1179w" sizes="(min-width: 900px) 420px, 90vw">
-            <img src="assets/img/consultor.jpg" width="1179" height="1390" alt="Fundador de Crealynx Consulting" fetchpriority="high">
+            <source type="image/webp" srcset="assets/img/consultor-600.webp 600w, assets/img/consultor.webp 1179w" sizes="(min-width: 960px) 420px, 90vw">
+            <img src="assets/img/consultor.jpg" width="1179" height="1390" alt="Mario Carrasco, fundador de Crealynx Consulting" fetchpriority="high">
           </picture>
           <figcaption>
-            <strong data-i18n="hero.quoteTitle">Rentabilidad y eficiencia</strong>
-            <span data-i18n="hero.quote">son dos caras de la misma moneda.</span>
+            <strong>Mario Carrasco</strong>
+            <span data-i18n="hero.role">+15 años en compras estratégicas · ex LATAM Airlines</span>
           </figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- Cifras clave -->
+    <section class="stats" aria-label="Cifras clave">
+      <div class="wrap stats-grid">
+        <div><strong>+15</strong><span data-i18n="stat1">años de experiencia en compras y estrategia</span></div>
+        <div><strong>+10</strong><span data-i18n="stat2">años liderando negociaciones en LATAM Airlines</span></div>
+        <div><strong>20%</strong><span data-i18n="stat3">del ahorro logrado, solo por 3 meses</span></div>
+        <div><strong>$0</strong><span data-i18n="stat4">si no conseguimos ahorros</span></div>
+      </div>
+    </section>
+
+    <!-- 2. SERVICIOS -->
     <section class="section" id="servicios">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow" data-i18n="services.eyebrow">Especialidades</p>
-          <h2 data-i18n="services.title">Cómo ayudo a tu empresa</h2>
-          <p data-i18n="services.lead">Cada peso ahorrado con una gestión más inteligente va directo a mejorar el margen.</p>
-        </header>
-        <div class="cards">
-          <article class="card">
-            <span class="card-num">01</span>
-            <h3 data-i18n="s1.t">Compras estratégicas y gestión por categorías</h3>
-            <p data-i18n="s1.d">Organizamos tu gasto en categorías y definimos una estrategia para cada una, según su impacto y riesgo.</p>
-          </article>
-          <article class="card">
-            <span class="card-num">02</span>
-            <h3 data-i18n="s2.t">Optimización de costos y análisis de gasto</h3>
-            <p data-i18n="s2.d">Analizamos en qué y con quién gastas para encontrar ahorros concretos y medibles.</p>
-          </article>
-          <article class="card">
-            <span class="card-num">03</span>
-            <h3 data-i18n="s3.t">Negociación y contratos con proveedores</h3>
-            <p data-i18n="s3.d">Preparamos y conducimos negociaciones que aseguran mejores condiciones y relaciones de largo plazo.</p>
-          </article>
-          <article class="card">
-            <span class="card-num">04</span>
-            <h3 data-i18n="s4.t">Transformación y gobierno de compras</h3>
-            <p data-i18n="s4.d">Procesos, políticas y roles claros para que compras deje de ser soporte y se convierta en socio del negocio.</p>
-          </article>
-          <article class="card">
-            <span class="card-num">05</span>
-            <h3 data-i18n="s5.t">Programas de eficiencia para pymes</h3>
-            <p data-i18n="s5.d">Las mismas herramientas que usan las grandes corporaciones, adaptadas al tamaño y ritmo de tu empresa.</p>
-          </article>
-          <article class="card card-cta">
-            <h3 data-i18n="s6.t">¿No sabes por dónde empezar?</h3>
-            <p data-i18n="s6.d">Cuéntame tu situación y te diré dónde está la mayor oportunidad de ahorro.</p>
-            <a href="#contacto" class="btn btn-light" data-i18n="s6.cta">Escríbeme</a>
-          </article>
+      <div class="wrap services">
+        <div>
+          <header class="section-head">
+            <p class="eyebrow" data-i18n="services.eyebrow">Servicios</p>
+            <h2 data-i18n="services.title">Qué hacemos por tu empresa</h2>
+            <p data-i18n="services.lead">Cada peso ahorrado con una gestión más inteligente va directo a mejorar tu margen.</p>
+          </header>
+          <ol class="service-list">
+            <li>
+              <h3 data-i18n="s1.t">Análisis de la estructura de costos</h3>
+              <p data-i18n="s1.d">Revisamos en qué y con quién gastas para encontrar dónde está el ahorro.</p>
+            </li>
+            <li>
+              <h3 data-i18n="s2.t">Revisión y negociación con proveedores</h3>
+              <p data-i18n="s2.d">Renegociamos contratos y condiciones para que pagues lo justo.</p>
+            </li>
+            <li>
+              <h3 data-i18n="s3.t">Quick wins en procesos operacionales</h3>
+              <p data-i18n="s3.d">Mejoras rápidas que generan ahorro desde las primeras semanas.</p>
+            </li>
+            <li>
+              <h3 data-i18n="s4.t">E-Procurement</h3>
+              <p data-i18n="s4.d">Digitalizamos tus compras para ganar control, trazabilidad y velocidad.</p>
+            </li>
+            <li>
+              <h3 data-i18n="s5.t">Estrategias de seguimiento con KPI</h3>
+              <p data-i18n="s5.d">Indicadores claros para que los ahorros se mantengan en el tiempo.</p>
+            </li>
+          </ol>
         </div>
+        <figure class="services-img">
+          <img src="assets/img/industria.webp" width="649" height="707" loading="lazy" alt="Aviación y minería: industrias donde se aplican estas estrategias de compra">
+        </figure>
       </div>
     </section>
 
-    <!-- APPROACH -->
-    <section class="section section-dark" id="enfoque">
+    <!-- 3. METODOLOGÍA -->
+    <section class="section section-dark" id="metodologia">
       <div class="wrap">
         <header class="section-head">
-          <p class="eyebrow" data-i18n="approach.eyebrow">Mi filosofía</p>
-          <h2 data-i18n="approach.title">Valor de largo plazo, no ahorros de corto plazo.</h2>
-          <p data-i18n="approach.lead">Mi trabajo se basa en tres pilares que transforman compras de una función de soporte en un verdadero socio del negocio.</p>
+          <p class="eyebrow" data-i18n="method.eyebrow">Metodología</p>
+          <h2 data-i18n="method.title">Un proceso claro, de principio a fin</h2>
+          <p data-i18n="method.lead">Sabes en todo momento en qué etapa estamos y qué resultados estamos obteniendo.</p>
         </header>
-        <div class="pillars">
-          <div class="pillar">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" /></svg>
-            <h3 data-i18n="p1.t">Datos</h3>
-            <p data-i18n="p1.d">Decisiones basadas en el análisis real del gasto, no en supuestos.</p>
-          </div>
-          <div class="pillar">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" /></svg>
-            <h3 data-i18n="p2.t">Transparencia</h3>
-            <p data-i18n="p2.d">Objetivos, avances y resultados visibles en cada etapa del trabajo.</p>
-          </div>
-          <div class="pillar">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><circle cx="17" cy="10" r="2.5" /><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 20c0-2.5 1.2-4.5 3.5-4.5s3.5 2 3.5 4.5" /></svg>
-            <h3 data-i18n="p3.t">Colaboración</h3>
-            <p data-i18n="p3.d">Trabajo junto a tu equipo para que los resultados se mantengan en el tiempo.</p>
-          </div>
-        </div>
+        <ol class="steps">
+          <li><span class="step-n">1</span><h3 data-i18n="m1">Diagnóstico</h3></li>
+          <li><span class="step-n">2</span><h3 data-i18n="m2">Presentación de oportunidades</h3></li>
+          <li><span class="step-n">3</span><h3 data-i18n="m3">Selección de servicios</h3></li>
+          <li><span class="step-n">4</span><h3 data-i18n="m4">Ejecución</h3></li>
+          <li><span class="step-n">5</span><h3 data-i18n="m5">Revisión de resultados y cierre</h3></li>
+        </ol>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- 4. PAGO WIN-WIN -->
+    <section class="section" id="pago">
+      <div class="wrap pricing">
+        <div>
+          <p class="eyebrow" data-i18n="pay.eyebrow">Pago win-win</p>
+          <h2 data-i18n="pay.title">Solo ganamos si tú ganas</h2>
+          <p class="lead" data-i18n="pay.lead">Sin honorarios fijos ni riesgo para tu empresa: nuestro pago depende 100% de los resultados.</p>
+        </div>
+        <ul class="pay-cards">
+          <li>
+            <strong>100%</strong>
+            <span data-i18n="pay1">Variable, basado en resultados.</span>
+          </li>
+          <li>
+            <strong>20%</strong>
+            <span data-i18n="pay2">Del ahorro logrado, durante 3 meses.</span>
+          </li>
+          <li class="pay-zero">
+            <strong>$0</strong>
+            <span data-i18n="pay3">Si no hay ahorro, no pagas nada.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Banda CTA -->
+    <section class="band">
+      <img src="assets/img/planta.webp" width="1179" height="486" loading="lazy" alt="">
+      <div class="band-inner wrap">
+        <p data-i18n="band.t">Toda empresa puede mejorar su margen sin sacrificar crecimiento.</p>
+        <a href="#contacto" class="btn btn-light" data-i18n="band.cta">Trabajemos juntos</a>
+      </div>
+    </section>
+
+    <!-- 5. QUIÉN SOY -->
     <section class="section" id="nosotros">
       <div class="wrap about">
         <div class="about-copy">
           <p class="eyebrow" data-i18n="about.eyebrow">Quién soy</p>
-          <h2 data-i18n="about.title">De la dirección corporativa a tu empresa</h2>
-          <p data-i18n="about.p1">Después de años de liderazgo corporativo, decidí llevar esa experiencia a un campo más amplio: ayudar a empresas de todos los tamaños a alcanzar el mismo nivel de eficiencia y claridad estratégica que exigen las corporaciones globales.</p>
-          <p data-i18n="about.p2">Así nació Crealynx Consulting: una práctica de asesoría enfocada en eficiencia de costos, estrategia de proveedores y excelencia en negociación.</p>
+          <h2 data-i18n="about.title">Soy Mario Carrasco</h2>
+          <p data-i18n="about.p1">Profesional de compras y estrategia con más de 15 años de experiencia liderando iniciativas de optimización de costos y gestión de proveedores a nivel global. Mi carrera comenzó en grandes corporaciones, donde aprendí que los mejores resultados no vienen solo de negociar precios, sino de construir valor de largo plazo y excelencia operacional.</p>
+
+          <h3 data-i18n="about.journeyT">Trayectoria</h3>
+          <p data-i18n="about.p2">Durante más de una década trabajé en LATAM Airlines, en cargos como Strategic Negotiations y Global Procurement Senior Manager. Lideré programas de negociación complejos, administré presupuestos multimillonarios y ayudé a construir estrategias regionales que entregaron ahorros consistentes y mejoras en el desempeño de proveedores.</p>
+          <p data-i18n="about.p3">Después de años de liderazgo corporativo, decidí llevar esa experiencia a un campo más amplio: ayudar a empresas de todos los tamaños a alcanzar el mismo nivel de eficiencia y claridad estratégica que exigen las corporaciones globales. Así nació Crealynx Consulting, una práctica de asesoría enfocada en eficiencia de costos, estrategia de proveedores y excelencia en negociación.</p>
+
+          <h3 data-i18n="about.expT">Especialidades</h3>
+          <ul class="tags">
+            <li data-i18n="e1">Compras estratégicas y gestión por categorías</li>
+            <li data-i18n="e2">Optimización de costos y análisis de gasto</li>
+            <li data-i18n="e3">Negociación y contratos con proveedores</li>
+            <li data-i18n="e4">Transformación y gobierno de compras</li>
+            <li data-i18n="e5">Programas de eficiencia para pymes</li>
+          </ul>
         </div>
-        <aside class="vision">
-          <h3 data-i18n="vision.t">Visión y objetivos</h3>
-          <p data-i18n="vision.d">Ayudar a las organizaciones a ser más rentables, eficientes y estar preparadas para el futuro.</p>
-          <blockquote data-i18n="vision.q">«Trabajemos juntos para hacerlo realidad.»</blockquote>
+
+        <aside class="about-side">
+          <div class="vision">
+            <h3 data-i18n="phil.t">Mi filosofía</h3>
+            <p data-i18n="phil.d">Rentabilidad y eficiencia son dos caras de la misma moneda. Mi trabajo se basa en datos, transparencia y colaboración, para transformar compras de una función de soporte en un verdadero socio del negocio.</p>
+            <ul class="pillars-mini">
+              <li data-i18n="pill.data">Datos</li>
+              <li data-i18n="pill.transparency">Transparencia</li>
+              <li data-i18n="pill.collab">Colaboración</li>
+            </ul>
+          </div>
+          <div class="vision">
+            <h3 data-i18n="vision.t">Visión y objetivos</h3>
+            <p data-i18n="vision.d">Ayudar a las organizaciones a ser más rentables, eficientes y preparadas para el futuro, llevando prácticas avanzadas de negociación y gestión de costos a empresas que buscan crecer de forma sostenible.</p>
+            <blockquote data-i18n="vision.q">«Valor de largo plazo, no ahorros de corto plazo.»</blockquote>
+          </div>
         </aside>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- 6. CONTACTO -->
     <section class="section section-sand" id="contacto">
       <div class="wrap contact">
         <div class="contact-copy">
           <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
-          <h2 data-i18n="contact.title">Conversemos sobre tu margen</h2>
-          <p data-i18n="contact.lead">Cuéntame brevemente sobre tu empresa y te responderé dentro de un día hábil.</p>
+          <h2 data-i18n="contact.title">Empecemos con un diagnóstico</h2>
+          <p data-i18n="contact.lead">Cuéntame brevemente sobre tu empresa y te responderé dentro de un día hábil. Si no encontramos ahorros, no pagas.</p>
           <ul class="contact-list">
             <!-- TODO: reemplazar por los datos reales -->
             <li><a href="mailto:contacto@crealynx.cl">contacto@crealynx.cl</a></li>
